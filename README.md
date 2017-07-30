@@ -5,6 +5,7 @@ This repository includes the source code for the Alexa Skill as well as the engi
 
 You can run the node API locally by running these 2 containers (create /data/db if you want mongo data persistence):
 ```
+docker network create gh
 docker run -d --network gh --name ghmongo -p 27107:27107 -v /data/db:/data/db -d mongo:3.4
 docker run -d --network gh --name ghnode -p 3000:3000 andrewnite/govhacknodeapi:latest
 ```
