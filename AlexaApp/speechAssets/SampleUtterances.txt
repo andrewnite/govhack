@@ -4,16 +4,22 @@ AskActivityIntent Which park should I visit
 AskActivityIntent What is a good activity for today
 AskActivityIntent Give me an idea
 AskActivityIntent Give me an activity
-AskActivityIntent Give me another idea
+AskActivityIntent Give me another suggestion
+AskActivityIntent Another suggestion
+AskActivityIntent Another idea
+AskActivityIntent Give me another suggestion
 
 AskEventsIntent What events are on today
 AskEventsIntent Tell me about the events on today
 AskEventsIntent What event should I go today
 AskEventsIntent What meetups are on today
 
-SaveEventIntent Create an event with the name {meet at mooloolaba for coffee|Answer}
-SaveEventIntent Create an event with the description {meet at mooloolaba for coffee|Answer}
-SaveEventIntent Save an event with the name {meet at mooloolaba for coffee|Answer}
-SaveEventIntent Save an event with the description {meet at mooloolaba for coffee|Answer}
+SaveEventIntent Create an event with the name {meet at mooloolaba for coffee at one PM|Answer}
+SaveEventIntent Create an event with the description {play golf at headland park at three PM|Answer}
+SaveEventIntent Save an event with the name {meet at Starbucks in Caloundra at five o clock|Answer}
+SaveEventIntent Save an event with the description {play soccer at quad park at two PM|Answer}
+SaveEventIntent Save an event with the description {paddle board at kawana lake at ten o clock in the morning|Answer}
+SaveEventIntent Save an event with the description {go surfing at wurtulla beach access fifty six at eight AM|Answer}
+SaveEventIntent Save an event with the description {Barbeque at the beach in Alexandra Headlands at two PM|Answer}
 
 AMAZON.StartOverIntent start over

@@ -80,10 +80,15 @@ function handleSaveEventRequest(intent, session, callback) {
 function handleGetEventsRequest(intent, session, callback) {
     request(config.settings.apiUrl + '/events', function (error, response, body) {
         if (response && response.statusCode == 200) {
+            var speechOutput = "";
             var events = JSON.parse(body);
-            var eventDescriptions = events.filter(e => e.name).map((e, i) => "Event " + (i + 1) + ". " + e.name);
-            console.log(eventDescriptions);
-            var speechOutput = "Here are the meetup events on the calendar today. " + eventDescriptions.join(". ");
+            if (!events || !events.length){
+                speechOutput = "There are currently no events for today";
+            } else {
+                var eventDescriptions = events.filter(e => e.name).map((e, i) => "Event " + (i + 1) + ". " + e.name);
+                speechOutput = "There are " + eventDescriptions.length + " meetup events on the calendar today. " + eventDescriptions.join(". ");
+            }
+
             callback(session, responseHandler.buildSpeechletResponse(config.settings.alexaCardTitle, speechOutput, speechOutput, false));
         } else {
             console.log(error);
