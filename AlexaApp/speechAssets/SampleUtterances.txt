@@ -1,0 +1,19 @@
+AskActivityIntent What should I do today
+AskActivityIntent What parks are nearby
+AskActivityIntent Which park should I visit
+AskActivityIntent What is a good activity for today
+AskActivityIntent Give me an idea
+AskActivityIntent Give me an activity
+AskActivityIntent Give me another idea
+
+AskEventsIntent What events are on today
+AskEventsIntent Tell me about the events on today
+AskEventsIntent What event should I go today
+AskEventsIntent What meetups are on today
+
+SaveEventIntent Create an event with the name {meet at mooloolaba for coffee|Answer}
+SaveEventIntent Create an event with the description {meet at mooloolaba for coffee|Answer}
+SaveEventIntent Save an event with the name {meet at mooloolaba for coffee|Answer}
+SaveEventIntent Save an event with the description {meet at mooloolaba for coffee|Answer}
+
+AMAZON.StartOverIntent start over

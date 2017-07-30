@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "myAlexaRole",
+    "name": "govhack_coast",
+    "region": "us-east-1"
+  }
+}
